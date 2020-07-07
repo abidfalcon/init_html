@@ -42,13 +42,27 @@ nav  {
     flex-direction: row;
 }
 
+#burger-btn {
+    display: none;
+}
+
 /**
 * parametre regle de media
 **/
 @media screen and (max-width:576px) {
-    .flex-container {
+   header nav ul.flex-container {
         flex-direction: column;
+        display: none;
     }
+
+    #burger-btn {
+        display: block;
+        background-color: rgb(53, 226, 53);
+        border-color:black;
+        width: 5em;
+        height: 5em; 
+        padding: 2;
+   }
 }
 
 

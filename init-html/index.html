@@ -76,8 +76,12 @@
                     </a>
                 </li>
                 <li>
-                    <a class="btn bg-dark shadowed" href="#" title="mail la référence">
-                        <span class="icon-mail"></span> Email us
+                    <a class="btn bg-dark shadowed"
+                     href="#" 
+                     title="Send an email" 
+                     onclick="openModal()"
+                     >
+                    <span class="icon-mail"></span> Email us
                     </a>
                 </li>
 
@@ -163,12 +167,12 @@
 
     </footer>
     <!--template pour l'affichage du formulaire de contact-->
-    <!-- <template id="form-template"> -->
+     <template id="form-template">
     <!-- form c'est un ensemble de champ (ou controles de formulaire)-->
-    <form>
+    
         <div class="outer-modal">
             <div class="inner-modal">
-
+                <form>
                 <h2> Contactez le service client</h2>
                 <div>
                     <input type="text" name="name-ctrl" id="name-ctrl" placeholder="votre nom...">
@@ -183,14 +187,17 @@
                 </div>
                 <div>
                     <button class="submit" id="send-btn" type="submit">Envoyer</button>
+                    
+                    <button class="submit" id="close-btn" type="button"  onclick="closeModal()" >Annuler</button>
                 </div>
             </form>
         </div>
     </div>
 
     <!--<pre> <code>&it;h1&gt;Hello the template&it;/h1&gt;</code></pre>-->
-    <!--</template>-->
+    </template>
     <!-- fin du template pour l'affichage de formulaire de contact-->
+<script src="./assets/js/modal.js"></script>
 </body>
 
 </html>

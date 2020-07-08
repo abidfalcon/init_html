@@ -18,6 +18,7 @@
            <!-- Load icomoon styles-->
            <link href="./assets/css/style.css" rel="stylesheet">
            <link href="./assets/css/layout.css" rel="stylesheet">
+           <link href="./assets/css/forms.css" rel="stylesheet">
     </head>
     <!-- Informations put after head tag will be visible in the  window navigator-->
         <body>
@@ -162,16 +163,16 @@
                     <div>
                     <input type="text" name="name-ctrl" id="name-ctrl" placeholder="votre nom...">
                     </div>  
-                    <div>
-                        <input type="email" name="email-ctrl" id="email-ctrl" placeholder="votre email (*)..." required>
-                    </div>
+                    <span class="required">
+                        <input type="email" name="email-ctrl" id="email-ctrl" placeholder="Votre email..." required>
+                    </span>
 
                     <div>
                         <label> objet de votre demande :</label>
                         <textarea name="objet-ctrl" id="objet-ctrl"></textarea> <!-- vrai balise-->
                     </div>
                     <div>
-                        <button id="send-btn" type="submit">Envoyer</button>
+                        <button class="submit" id="send-btn" type="submit">Envoyer</button>
                     </div>
                 </form>
 

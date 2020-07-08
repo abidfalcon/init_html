@@ -1,0 +1,45 @@
+/**
+Form and field design
+**/
+.required::after{/** pseudo-element==> ::pseudo **/
+    content: "(*)";
+    color: red;
+}
+input:required{
+    color: blue;
+}
+/**
+*input design
+**/
+input{
+    border-radius: 5em;
+    height: 1.2em;
+    border: solid 1px rgb(128, 128, 128);
+}
+
+/**
+button{
+    background-color: #28a745;;
+    border-radius: .5em;
+    color: seashell;
+    border: solid 1px; 
+}
+**/
+
+
+button[type="submit"] {
+    color: var(--light);
+    padding: 0.5em;
+    background-color:  var(--success);
+    border-radius: .3em;
+    border: none;
+    /**border: solid 1px var(--dark-success);**/
+    transition: background-color 0.3s 0s ease-out;
+}
+
+/**button[type="submit"]:hover{}  two ways to write**/
+
+:hover[type="submit"] {
+    background-color: var(--dark-success);
+
+}

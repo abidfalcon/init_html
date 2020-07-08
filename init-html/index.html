@@ -26,7 +26,7 @@
                 
                         
                             <h1 class="col-12 col-xl-8"> découvrir le HTML</h1> <!-- head is a bloc type tag it covers in navigator all the space in form of rectangle 100% space-->
-                            <p class="col-12 col-xl-4"></p>
+                            <p class="col-12 col-xl-4">
                                 <!-- abbr tag is used to give the significance of your abbreviation here we used HTML-->
                                 <!-- while the tag p is en lign tag [write down bloc and en lign tags in notes] -->
                             History of <abbr title= "Hyper text markup language" class="dropdown">HTML </abbr> in different decades
@@ -154,6 +154,29 @@
                         
                     
                 </footer>
-           
+           <!--template pour l'affichage du formulaire de contact-->
+           <!-- <template id="form-template"> -->
+                <!-- form c'est un ensemble de champ (ou controles de formulaire)-->
+                <form>
+                    <h2> Contactez le service client</h2>
+                    <div>
+                    <input type="text" name="name-ctrl" id="name-ctrl" placeholder="votre nom...">
+                    </div>  
+                    <div>
+                        <input type="email" name="email-ctrl" id="email-ctrl" placeholder="votre email (*)..." required>
+                    </div>
+
+                    <div>
+                        <label> objet de votre demande :</label>
+                        <textarea name="objet-ctrl" id="objet-ctrl"></textarea> <!-- vrai balise-->
+                    </div>
+                    <div>
+                        <button id="send-btn">Envoyer</button>
+                    </div>
+                </form>
+
+               <!--<pre> <code>&it;h1&gt;Hello the template&it;/h1&gt;</code></pre>-->
+            <!--</template>-->
+           <!-- fin du template pour l'affichage de formulaire de contact-->
         </body>
 </html>                  
